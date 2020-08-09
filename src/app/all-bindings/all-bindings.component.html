@@ -1,0 +1,22 @@
+<div class="container">
+  <input type="text" class="form-control" [(ngModel)]="bName">
+  {{bName}}
+  <button class="btn btn-warning" [disabled]="!TName" (click)="CEvent()">binding</button>
+  <input type="text" class="form-control" (input)="IEvent($event)">
+  {{aName}}
+  <button class="btn btn-danger">abc</button>
+  <hr>
+  <div class="container">
+    <div>
+      <input type="text" class="form-control" [(ngModel)]="UserName">
+      {{UserName}}
+    </div>
+    <button class="btn btn-info" [disabled]="UserName === ''" (click)="UserName = ''">Reset
+      button</button>
+  </div>
+  <div>
+    <input type="text" class="form-control" (input)="givenName($event)">
+    <button class="btn btn-danger">nmbh</button>
+    <h6>{{insertedName}}</h6>
+  </div>
+</div>

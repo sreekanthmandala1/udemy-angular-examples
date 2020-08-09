@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6" >
+      <hr>
+      <button class="btn btn-primary" [disabled]="!enablebutton" (click)="onServerChange()">server</button>
+      <p>{{serverCreation}}</p>
+    </div>
+    <hr>
+    <div class="col-6" >
+      <hr>
+      <button class="btn btn-success" (click)="withSuccess()">success</button>
+      <p>{{notSuccess}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6" >
+      <h2>Event binding</h2>
+      <label>Name</label>
+      <input type="text" class="form-control" (input)="onUpdateServerName($event)">
+      <p>{{serverName}}</p>
+      <button id="alertone" class="btn btn-primary">clickme</button>
+    </div>
+    <hr>
+    <div class="col-6">
+      <div>
+        <label>inputevent</label>
+        <input type="text" class="form-control" (input)="secondInput($event)">
+        <p>{{eventName}}</p>
+      </div>
+      
+      <div>
+        <label>abc</label>
+        <input type="text" class="form-control" [(ngModel)]="twoWay">
+        <p>{{twoWay}}</p>
+      </div>
+    </div>
+  </div>
+</div>

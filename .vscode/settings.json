@@ -1,0 +1,11 @@
+{
+    "workbench.enableExperiments": false,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "files.autoSave": "afterDelay",
+    "editor.fontSize": 16,
+    "editor.tabSize": 2,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "http.proxyStrictSSL": false,
+    "http.systemCertificates": false
+}

@@ -1,0 +1,40 @@
+<div class="container">
+
+  <!--String Interpolation-->
+  <h2>This is string interpolation</h2>
+  {{sMyName}}
+  <hr>
+  <!--property binding-->
+  <h2>this is property binding</h2>
+  <button class="btn btn-info" [disabled]="!allowNewNetwork">turn on network</button>
+  <p>{{allowNewNetwork}}</p>
+  <hr>
+  <!--for property binding [innerText]="allownewNetwork"-->
+  <h2>Events</h2>
+  <hr>
+  <!--Events-->
+  <button class="btn btn-warning" (click)="Success()">turn on network</button>
+  <p>{{notSuccess}}</p>
+  <hr>
+  <!--String Interpolation-->
+  <h2>This is string interpolation</h2>
+  <b>{{getMyName}}</b>
+  <hr>
+  <!--String Interpolation-->
+  <i>{{writeSomething}}</i>
+  <hr>
+  <!--Property binding-->
+  <button class="btn btn-danger" [disabled]="!propertyB">Property binding</button>
+  <p [innerText]="propertyB"></p>
+  <!--events-->
+  <button class="btn btn-primary" (click)="clickEvent()">Click Event</button>
+  <div>{{clickE}}</div>
+  <!--input events-->
+  <label>this is input event</label>
+  <input type="text" class="form-control" (input)="onUpdateInput($event)" >
+  {{inputE}}
+  <!--two way binding-->
+  <h2>this is two way binding</h2>
+  <input type="text" class="form-control" [(ngModel)]="twoWayD">
+  {{twoWayD}}
+</div>
